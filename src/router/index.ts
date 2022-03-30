@@ -24,6 +24,12 @@ asyncFiles.keys().forEach((key) => {
 
 export const constantRoutes: Array<RouteRecordRaw> = [
   {
+    path: '/map2d',
+    component: () => import(/* webpackChunkName: "redirect" */ '@/views/home/map2d/index.vue'),
+    meta: { hidden: true },
+    children: []
+  },
+  {
     path: '/redirect',
     component: Layout,
     meta: { hidden: true },
